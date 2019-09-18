@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ESA.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,12 @@ namespace ESA
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        // Douglas
+        private async void The_Douglas_Button_has_been_Clicked_Event_Handling_Method_Version_One(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DougsPage());
         }
     }
 }

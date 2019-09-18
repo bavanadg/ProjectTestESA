@@ -11,6 +11,7 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Button Clicked="The_Douglas_Button_has_been_Clicked_Event_Handling_Method_Version_One" Text="Don't Push this Button"/>
     </StackLayout>
 
 </ContentPage>
