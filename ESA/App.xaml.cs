@@ -11,8 +11,8 @@ namespace ESA
         {
             InitializeComponent();
 
-            //MainPage = new MainPage();
-            MainPage = new Lacrimal();
+            MainPage = new NavigationPage(new MainPage()); // REC: Need this for Navigation
+            // MainPage = new Lacrimal();
         }
 
         protected override void OnStart()

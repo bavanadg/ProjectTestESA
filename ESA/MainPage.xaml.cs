@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ESA.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,13 @@ namespace ESA
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        async void Go2_MP_Roeche (object sender, EventArgs e)
+        {
+            // await NavigationPage(new Page_Rodrigo());
+            // NavigationPage(Page_Rodrigo);
+            await Navigation.PushAsync(new Page_Rodrigo());
         }
     }
 }

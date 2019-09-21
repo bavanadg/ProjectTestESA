@@ -4,13 +4,37 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ESA.MainPage">
+             x:Class="ESA.MainPage"
+             Title="Main Page">
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+
+        <Image Source="https://roeche.github.io/Pyramid.jpg" />
+        <Label Text="Welcome to the Test Page of the iVision Team!" FontSize="Title" 
+               HorizontalOptions="Center"/>
+        <Label Text="Please choose the page which you want to visit:" FontSize="Subtitle"
+               HorizontalOptions="Center"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Alex" />
+            <Button Text="Cassie" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Dhammika" />
+            <Button Text="Douglas" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Hyun" />
+            <Button Text="Jason" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Leon" />
+            <Button Text="Robbie" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Rodrigo" Clicked="Go2_MP_Roeche" BackgroundColor="LawnGreen"/>
+            <Button Text="TBD" BackgroundColor="Beige"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

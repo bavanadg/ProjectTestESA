@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ESA.Views.Page_Rodrigo">
+    <StackLayout Padding="10" Spacing="10" >
+        <!-- Place new controls here-->
+        <Image Source="https://roeche.github.io/Mex_Aus.png"/>
+        <Label Text="{Binding WelcomeLabel}" HorizontalOptions="CenterAndExpand" FontSize="Title" Margin="16"/>
+        <Label Text="Name:"/>
+        <Entry Text="{Binding Name, Mode=TwoWay}" Placeholder="Please enter your name here"/>
+        <Label Text="Website to visit (Feel free to change it):"/>
+        <Entry Text="{Binding Website}"/>
+        <!-- REC: See theory re Binding the Website Button @ 21:40 -->
+        <Button Text="Open Website" Command="{Binding LaunchWebsiteCommand}" />
+        <!--<Button Text="Save Contact"/>-->
+        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="Center">
+            <Label Text="{Binding Question, Mode=TwoWay}" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="No" FontSize="Subtitle"/>
+                <Switch IsToggled="{Binding Response, Mode=TwoWay}"/>
+                <Label Text="Si" FontSize="Subtitle"/>
+            </StackLayout>
+            <Label Text="{Binding Options, Mode=TwoWay}" HorizontalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
