@@ -12,7 +12,7 @@ namespace ESA
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new Lacrimal();
+            MainPage = new NavigationPage(new Lacrimal());
         }
 
         protected override void OnStart()

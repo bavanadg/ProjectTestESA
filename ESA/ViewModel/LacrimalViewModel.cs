@@ -32,6 +32,7 @@ namespace ESA.ViewModel
                 "accessory lacrimal sinus or fistula and the insertion of a mini " +
                 "Monoka stent to protect the normal canaliculus. It discusses the " +
                 "different surgical options for this rare condition."
+
             };
             LacrimalModel lacrimal2 = new LacrimalModel
             {

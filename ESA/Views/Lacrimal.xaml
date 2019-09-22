@@ -6,6 +6,7 @@
              xmlns:viewModel="clr-namespace:ESA.ViewModel"
              mc:Ignorable="d"
              x:Class="ESA.Views.Lacrimal">
+    
     <!--LIST-->
     <!--List ItemTemplate is linked to application resouce in app.xaml. This reduces repeated lines of xaml code for 
     pages with similar template layout-->
@@ -13,4 +14,5 @@
                                     ItemTemplate="{StaticResource listProcedureTemplate}">
       
     </ListView>
+   
 </ContentPage>

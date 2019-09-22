@@ -130,4 +130,7 @@
       <Name>ESA</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\steps.png" />
+  </ItemGroup>
 </Project>
